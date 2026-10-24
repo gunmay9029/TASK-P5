@@ -1,0 +1,9 @@
+{
+  "name": "sit313-p5-newsletter-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express API for the DEV@Deakin P5 newsletter signup",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": { "@sendgrid/mail": "^8.1.6", "dotenv": "^17.4.2", "express": "^5.2.1" }
+}

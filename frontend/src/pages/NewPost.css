@@ -1,0 +1,275 @@
+
+/* New Post page — styled to match the existing DEV@Deakin website */
+
+.new-post-page {
+  width: min(680px, 92%);
+  margin: 32px auto 55px;
+  color: #edf0f8;
+}
+
+.new-post-card {
+  padding: 28px 32px;
+  border: 1px solid #222a40;
+  border-radius: 10px;
+  background: #111526;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+/* Page heading */
+
+.new-post-heading {
+  margin-bottom: 22px;
+}
+
+.new-post-eyebrow {
+  margin: 0 0 7px;
+  color: #85dcd0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.new-post-heading h1 {
+  margin: 0 0 8px;
+  color: #f2f3fa;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.new-post-heading > p:last-child {
+  margin: 0;
+  color: #aeb7c9;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Question and Article selection */
+
+.post-type-fieldset {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 0 0 22px;
+  padding: 12px 15px;
+  border: 1px solid #303951;
+  border-radius: 5px;
+}
+
+.post-type-fieldset legend {
+  padding: 0 5px;
+  color: #e9edf6;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.post-type-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #e0e5ef;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.post-type-option input {
+  margin: 0;
+  accent-color: #85dcd0;
+  cursor: pointer;
+}
+
+/* Form section */
+
+.post-form-section {
+  margin-top: 0;
+}
+
+.post-form-section h2 {
+  margin: 0;
+  padding: 10px 13px;
+  border-radius: 4px;
+  background: #222a40;
+  color: #f1f3fa;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.post-form-intro {
+  margin: 12px 0 18px;
+  color: #b3bdcf;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+/* Input fields */
+
+.post-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 17px;
+}
+
+.post-form-field label {
+  color: #e8ecf5;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.post-form-field input,
+.post-form-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #424c64;
+  border-radius: 4px;
+  background: #0c1120;
+  color: #edf0f8;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  transition: border-color 0.2s ease;
+}
+
+.post-form-field input {
+  min-height: 39px;
+}
+
+.post-form-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.post-form-field textarea#post-description {
+  min-height: 170px;
+}
+
+.post-form-field textarea#post-article-text {
+  min-height: 170px;
+}
+
+.post-form-field textarea#post-abstract {
+  min-height: 75px;
+}
+
+.post-form-field input::placeholder,
+.post-form-field textarea::placeholder {
+  color: #8590a7;
+  opacity: 1;
+}
+
+.post-form-field input:focus,
+.post-form-field textarea:focus {
+  outline: none;
+  border-color: #85dcd0;
+  box-shadow: 0 0 0 2px rgba(133, 220, 208, 0.12);
+}
+
+.post-form-field input[aria-invalid="true"],
+.post-form-field textarea[aria-invalid="true"] {
+  border-color: #ff929e;
+}
+
+/* Validation messages */
+
+.post-field-error {
+  margin: 0;
+  color: #ff9ca7;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.post-field-hint {
+  margin: 0;
+  color: #9ca8bc;
+  font-size: 0.77rem;
+  line-height: 1.5;
+}
+
+.post-status {
+  margin: 14px 0;
+  padding: 11px 13px;
+  border-radius: 4px;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.post-status-error {
+  border: 1px solid #a64e61;
+  background: #301923;
+  color: #ffc0c8;
+}
+
+.post-status-success {
+  border: 1px solid #387e75;
+  background: #132c2c;
+  color: #a9eee3;
+}
+
+/* Post button */
+
+.post-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.post-submit-button {
+  min-width: 105px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  background: #85dcd0;
+  color: #101526;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.post-submit-button:hover {
+  background: #a2ebe0;
+}
+
+.post-submit-button:focus-visible {
+  outline: 2px solid #f2f3fa;
+  outline-offset: 3px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+  .new-post-page {
+    width: 92%;
+    margin: 22px auto 35px;
+  }
+
+  .new-post-card {
+    padding: 20px 17px;
+  }
+
+  .new-post-heading h1 {
+    font-size: 1.75rem;
+  }
+
+  .post-type-fieldset {
+    gap: 15px;
+    padding: 12px;
+  }
+
+  .post-form-field textarea#post-description,
+  .post-form-field textarea#post-article-text {
+    min-height: 140px;
+  }
+
+  .post-submit-row {
+    justify-content: stretch;
+  }
+
+  .post-submit-button {
+    width: 100%;
+  }
+}
